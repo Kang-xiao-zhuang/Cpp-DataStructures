@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 using namespace std;
+
 int main() {
     sqlist *A;
     sqlist *B;
@@ -62,7 +63,7 @@ int main() {
     }
     cout << "-----Ë³Ğò±íC-----" << endl;
     dispList(C);
-    cout<<endl;
+    cout << endl;
     cout << "-----É¾³ıÔªËØË÷ÒıÎª6-----" << endl;
     listDelete(C, 6, e);
     cout << "-----Ë³Ğò±íC-----" << endl;
