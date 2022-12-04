@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Develop/Clion_Project/C++DataStructures/sqlist/sqlist.cpp
+sqlist.h
+D:/Develop/Clion_Project/C++DataStructures/sqlist/sqlist.h
+stdio.h
+-
+
+D:/Develop/Clion_Project/C++DataStructures/sqlist/sqlist.h
+malloc.h
+-
+iostream
+-
+bits/stdc++.h
+-
+
