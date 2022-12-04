@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Develop/Clion_Project/C++DataStructures/linklist/linklist.cpp">
+			<Option target="C__DataStructures"/>
+		</Unit>
+		<Unit filename="D:/Develop/Clion_Project/C++DataStructures/linklist/linklist.h">
+			<Option target="C__DataStructures"/>
+		</Unit>
 		<Unit filename="D:/Develop/Clion_Project/C++DataStructures/main.cpp">
 			<Option target="C__DataStructures"/>
 		</Unit>

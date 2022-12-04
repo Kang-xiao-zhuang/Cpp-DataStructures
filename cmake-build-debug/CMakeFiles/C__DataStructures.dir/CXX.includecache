@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-D:/Develop/Clion_Project/C++DataStructures/sqlist/sqlist.cpp
-sqlist.h
-D:/Develop/Clion_Project/C++DataStructures/sqlist/sqlist.h
-stdio.h
--
+D:/Develop/Clion_Project/C++DataStructures/linklist/linklist.cpp
+linklist.h
+D:/Develop/Clion_Project/C++DataStructures/linklist/linklist.h
 
-D:/Develop/Clion_Project/C++DataStructures/sqlist/sqlist.h
+D:/Develop/Clion_Project/C++DataStructures/linklist/linklist.h
+cstdio
+-
+cstdlib
+-
 malloc.h
 -
 iostream

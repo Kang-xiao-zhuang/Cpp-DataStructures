@@ -141,6 +141,33 @@ C__DataStructures/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__DataStructures.dir\build.make CMakeFiles/C__DataStructures.dir/build
 .PHONY : C__DataStructures/fast
 
+linklist/linklist.obj: linklist/linklist.cpp.obj
+
+.PHONY : linklist/linklist.obj
+
+# target to build an object file
+linklist/linklist.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__DataStructures.dir\build.make CMakeFiles/C__DataStructures.dir/linklist/linklist.cpp.obj
+.PHONY : linklist/linklist.cpp.obj
+
+linklist/linklist.i: linklist/linklist.cpp.i
+
+.PHONY : linklist/linklist.i
+
+# target to preprocess a source file
+linklist/linklist.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__DataStructures.dir\build.make CMakeFiles/C__DataStructures.dir/linklist/linklist.cpp.i
+.PHONY : linklist/linklist.cpp.i
+
+linklist/linklist.s: linklist/linklist.cpp.s
+
+.PHONY : linklist/linklist.s
+
+# target to generate assembly for a file
+linklist/linklist.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__DataStructures.dir\build.make CMakeFiles/C__DataStructures.dir/linklist/linklist.cpp.s
+.PHONY : linklist/linklist.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -204,6 +231,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... C__DataStructures
+	@echo ... linklist/linklist.obj
+	@echo ... linklist/linklist.i
+	@echo ... linklist/linklist.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
