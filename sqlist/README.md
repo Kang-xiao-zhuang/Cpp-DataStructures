@@ -1,7 +1,6 @@
 # 顺序表
 
 **sqlist.h**
-
 ```cpp
 //
 // Created by KangXiaoZhuang on 2022/12/4.
