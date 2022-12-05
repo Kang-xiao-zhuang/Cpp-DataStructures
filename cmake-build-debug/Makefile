@@ -222,6 +222,33 @@ sqlist/sqlist.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__DataStructures.dir\build.make CMakeFiles/C__DataStructures.dir/sqlist/sqlist.cpp.s
 .PHONY : sqlist/sqlist.cpp.s
 
+stack/mystack.obj: stack/mystack.cpp.obj
+
+.PHONY : stack/mystack.obj
+
+# target to build an object file
+stack/mystack.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__DataStructures.dir\build.make CMakeFiles/C__DataStructures.dir/stack/mystack.cpp.obj
+.PHONY : stack/mystack.cpp.obj
+
+stack/mystack.i: stack/mystack.cpp.i
+
+.PHONY : stack/mystack.i
+
+# target to preprocess a source file
+stack/mystack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__DataStructures.dir\build.make CMakeFiles/C__DataStructures.dir/stack/mystack.cpp.i
+.PHONY : stack/mystack.cpp.i
+
+stack/mystack.s: stack/mystack.cpp.s
+
+.PHONY : stack/mystack.s
+
+# target to generate assembly for a file
+stack/mystack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__DataStructures.dir\build.make CMakeFiles/C__DataStructures.dir/stack/mystack.cpp.s
+.PHONY : stack/mystack.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -240,6 +267,9 @@ help:
 	@echo ... sqlist/sqlist.obj
 	@echo ... sqlist/sqlist.i
 	@echo ... sqlist/sqlist.s
+	@echo ... stack/mystack.obj
+	@echo ... stack/mystack.i
+	@echo ... stack/mystack.s
 .PHONY : help
 
 

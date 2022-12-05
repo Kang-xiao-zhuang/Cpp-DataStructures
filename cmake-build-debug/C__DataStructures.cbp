@@ -97,6 +97,12 @@
 		<Unit filename="D:/Develop/Clion_Project/C++DataStructures/sqlist/sqlist.h">
 			<Option target="C__DataStructures"/>
 		</Unit>
+		<Unit filename="D:/Develop/Clion_Project/C++DataStructures/stack/mystack.cpp">
+			<Option target="C__DataStructures"/>
+		</Unit>
+		<Unit filename="D:/Develop/Clion_Project/C++DataStructures/stack/mystack.h">
+			<Option target="C__DataStructures"/>
+		</Unit>
 		<Unit filename="D:/Develop/Clion_Project/C++DataStructures/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

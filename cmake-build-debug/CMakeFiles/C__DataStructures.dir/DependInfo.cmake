@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Develop/Clion_Project/C++DataStructures/linklist/linklist.cpp" "D:/Develop/Clion_Project/C++DataStructures/cmake-build-debug/CMakeFiles/C__DataStructures.dir/linklist/linklist.cpp.obj"
   "D:/Develop/Clion_Project/C++DataStructures/main.cpp" "D:/Develop/Clion_Project/C++DataStructures/cmake-build-debug/CMakeFiles/C__DataStructures.dir/main.cpp.obj"
   "D:/Develop/Clion_Project/C++DataStructures/sqlist/sqlist.cpp" "D:/Develop/Clion_Project/C++DataStructures/cmake-build-debug/CMakeFiles/C__DataStructures.dir/sqlist/sqlist.cpp.obj"
+  "D:/Develop/Clion_Project/C++DataStructures/stack/mystack.cpp" "D:/Develop/Clion_Project/C++DataStructures/cmake-build-debug/CMakeFiles/C__DataStructures.dir/stack/mystack.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -6,19 +6,21 @@
 
 #IncludeRegexTransform: 
 
-D:/Develop/Clion_Project/C++DataStructures/linklist/linklist.cpp
-linklist.h
-D:/Develop/Clion_Project/C++DataStructures/linklist/linklist.h
+D:/Develop/Clion_Project/C++DataStructures/stack/mystack.cpp
+mystack.h
+D:/Develop/Clion_Project/C++DataStructures/stack/mystack.h
+stack
+D:/Develop/Clion_Project/C++DataStructures/stack/stack
+iostream
+-
 
-D:/Develop/Clion_Project/C++DataStructures/linklist/linklist.h
-cstdio
--
-cstdlib
--
+D:/Develop/Clion_Project/C++DataStructures/stack/mystack.h
 malloc.h
 -
 iostream
 -
-bits/stdc++.h
+cstdio
+-
+cstdlib
 -
 
