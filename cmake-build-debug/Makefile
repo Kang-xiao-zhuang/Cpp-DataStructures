@@ -195,6 +195,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__DataStructures.dir\build.make CMakeFiles/C__DataStructures.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+queue/myqueue.obj: queue/myqueue.cpp.obj
+
+.PHONY : queue/myqueue.obj
+
+# target to build an object file
+queue/myqueue.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__DataStructures.dir\build.make CMakeFiles/C__DataStructures.dir/queue/myqueue.cpp.obj
+.PHONY : queue/myqueue.cpp.obj
+
+queue/myqueue.i: queue/myqueue.cpp.i
+
+.PHONY : queue/myqueue.i
+
+# target to preprocess a source file
+queue/myqueue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__DataStructures.dir\build.make CMakeFiles/C__DataStructures.dir/queue/myqueue.cpp.i
+.PHONY : queue/myqueue.cpp.i
+
+queue/myqueue.s: queue/myqueue.cpp.s
+
+.PHONY : queue/myqueue.s
+
+# target to generate assembly for a file
+queue/myqueue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__DataStructures.dir\build.make CMakeFiles/C__DataStructures.dir/queue/myqueue.cpp.s
+.PHONY : queue/myqueue.cpp.s
+
 sqlist/sqlist.obj: sqlist/sqlist.cpp.obj
 
 .PHONY : sqlist/sqlist.obj
@@ -264,6 +291,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... queue/myqueue.obj
+	@echo ... queue/myqueue.i
+	@echo ... queue/myqueue.s
 	@echo ... sqlist/sqlist.obj
 	@echo ... sqlist/sqlist.i
 	@echo ... sqlist/sqlist.s

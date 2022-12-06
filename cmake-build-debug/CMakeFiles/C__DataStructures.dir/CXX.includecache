@@ -6,20 +6,18 @@
 
 #IncludeRegexTransform: 
 
-D:/Develop/Clion_Project/C++DataStructures/stack/mystack.cpp
-mystack.h
-D:/Develop/Clion_Project/C++DataStructures/stack/mystack.h
-stack
-D:/Develop/Clion_Project/C++DataStructures/stack/stack
-iostream
--
+D:/Develop/Clion_Project/C++DataStructures/queue/myqueue.cpp
+myqueue.h
+D:/Develop/Clion_Project/C++DataStructures/queue/myqueue.h
 
-D:/Develop/Clion_Project/C++DataStructures/stack/mystack.h
-malloc.h
--
+D:/Develop/Clion_Project/C++DataStructures/queue/myqueue.h
 iostream
+-
+string
 -
 cstdio
+-
+cstring
 -
 cstdlib
 -

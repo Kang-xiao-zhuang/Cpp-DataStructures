@@ -91,6 +91,12 @@
 		<Unit filename="D:/Develop/Clion_Project/C++DataStructures/main.cpp">
 			<Option target="C__DataStructures"/>
 		</Unit>
+		<Unit filename="D:/Develop/Clion_Project/C++DataStructures/queue/myqueue.cpp">
+			<Option target="C__DataStructures"/>
+		</Unit>
+		<Unit filename="D:/Develop/Clion_Project/C++DataStructures/queue/myqueue.h">
+			<Option target="C__DataStructures"/>
+		</Unit>
 		<Unit filename="D:/Develop/Clion_Project/C++DataStructures/sqlist/sqlist.cpp">
 			<Option target="C__DataStructures"/>
 		</Unit>
