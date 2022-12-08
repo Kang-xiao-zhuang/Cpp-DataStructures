@@ -6,19 +6,13 @@
 
 #IncludeRegexTransform: 
 
-D:/Develop/Clion_Project/C++DataStructures/queue/myqueue.cpp
-myqueue.h
-D:/Develop/Clion_Project/C++DataStructures/queue/myqueue.h
-
-D:/Develop/Clion_Project/C++DataStructures/queue/myqueue.h
+D:/Develop/Clion_Project/C++DataStructures/string/mystring.cpp
+mystring.h
+D:/Develop/Clion_Project/C++DataStructures/string/mystring.h
 iostream
 -
-string
--
-cstdio
--
-cstring
--
-cstdlib
+
+D:/Develop/Clion_Project/C++DataStructures/string/mystring.h
+iostream
 -
 

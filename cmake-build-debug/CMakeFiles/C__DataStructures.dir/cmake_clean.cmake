@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/C__DataStructures.dir/queue/myqueue.cpp.obj"
   "CMakeFiles/C__DataStructures.dir/sqlist/sqlist.cpp.obj"
   "CMakeFiles/C__DataStructures.dir/stack/mystack.cpp.obj"
+  "CMakeFiles/C__DataStructures.dir/string/mystring.cpp.obj"
   "C__DataStructures.exe"
   "C__DataStructures.exe.manifest"
   "C__DataStructures.pdb"

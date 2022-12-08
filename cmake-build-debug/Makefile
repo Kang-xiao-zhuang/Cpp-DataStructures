@@ -276,6 +276,33 @@ stack/mystack.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__DataStructures.dir\build.make CMakeFiles/C__DataStructures.dir/stack/mystack.cpp.s
 .PHONY : stack/mystack.cpp.s
 
+string/mystring.obj: string/mystring.cpp.obj
+
+.PHONY : string/mystring.obj
+
+# target to build an object file
+string/mystring.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__DataStructures.dir\build.make CMakeFiles/C__DataStructures.dir/string/mystring.cpp.obj
+.PHONY : string/mystring.cpp.obj
+
+string/mystring.i: string/mystring.cpp.i
+
+.PHONY : string/mystring.i
+
+# target to preprocess a source file
+string/mystring.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__DataStructures.dir\build.make CMakeFiles/C__DataStructures.dir/string/mystring.cpp.i
+.PHONY : string/mystring.cpp.i
+
+string/mystring.s: string/mystring.cpp.s
+
+.PHONY : string/mystring.s
+
+# target to generate assembly for a file
+string/mystring.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__DataStructures.dir\build.make CMakeFiles/C__DataStructures.dir/string/mystring.cpp.s
+.PHONY : string/mystring.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -300,6 +327,9 @@ help:
 	@echo ... stack/mystack.obj
 	@echo ... stack/mystack.i
 	@echo ... stack/mystack.s
+	@echo ... string/mystring.obj
+	@echo ... string/mystring.i
+	@echo ... string/mystring.s
 .PHONY : help
 
 

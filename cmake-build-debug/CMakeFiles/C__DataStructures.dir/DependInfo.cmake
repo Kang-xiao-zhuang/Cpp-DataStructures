@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Develop/Clion_Project/C++DataStructures/queue/myqueue.cpp" "D:/Develop/Clion_Project/C++DataStructures/cmake-build-debug/CMakeFiles/C__DataStructures.dir/queue/myqueue.cpp.obj"
   "D:/Develop/Clion_Project/C++DataStructures/sqlist/sqlist.cpp" "D:/Develop/Clion_Project/C++DataStructures/cmake-build-debug/CMakeFiles/C__DataStructures.dir/sqlist/sqlist.cpp.obj"
   "D:/Develop/Clion_Project/C++DataStructures/stack/mystack.cpp" "D:/Develop/Clion_Project/C++DataStructures/cmake-build-debug/CMakeFiles/C__DataStructures.dir/stack/mystack.cpp.obj"
+  "D:/Develop/Clion_Project/C++DataStructures/string/mystring.cpp" "D:/Develop/Clion_Project/C++DataStructures/cmake-build-debug/CMakeFiles/C__DataStructures.dir/string/mystring.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

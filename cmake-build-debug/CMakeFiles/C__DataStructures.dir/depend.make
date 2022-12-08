@@ -6,9 +6,11 @@ CMakeFiles/C__DataStructures.dir/linklist/linklist.cpp.obj: ../linklist/linklist
 CMakeFiles/C__DataStructures.dir/main.cpp.obj: ../main.cpp
 
 CMakeFiles/C__DataStructures.dir/queue/myqueue.cpp.obj: ../queue/myqueue.cpp
-CMakeFiles/C__DataStructures.dir/queue/myqueue.cpp.obj: ../queue/myqueue.h
 
 CMakeFiles/C__DataStructures.dir/sqlist/sqlist.cpp.obj: ../sqlist/sqlist.cpp
 
 CMakeFiles/C__DataStructures.dir/stack/mystack.cpp.obj: ../stack/mystack.cpp
+
+CMakeFiles/C__DataStructures.dir/string/mystring.cpp.obj: ../string/mystring.cpp
+CMakeFiles/C__DataStructures.dir/string/mystring.cpp.obj: ../string/mystring.h
 
