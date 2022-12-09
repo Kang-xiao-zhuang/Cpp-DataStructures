@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-D:/Develop/Clion_Project/C++DataStructures/string/mystring.cpp
-mystring.h
-D:/Develop/Clion_Project/C++DataStructures/string/mystring.h
+D:/Develop/Clion_Project/C++DataStructures/binarytree/binarytree.cpp
+binarytree.h
+D:/Develop/Clion_Project/C++DataStructures/binarytree/binarytree.h
+
+D:/Develop/Clion_Project/C++DataStructures/binarytree/binarytree.h
 iostream
 -
-
-D:/Develop/Clion_Project/C++DataStructures/string/mystring.h
-iostream
+malloc.h
 -
 

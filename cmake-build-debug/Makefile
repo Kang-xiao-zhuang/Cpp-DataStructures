@@ -141,6 +141,33 @@ C__DataStructures/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__DataStructures.dir\build.make CMakeFiles/C__DataStructures.dir/build
 .PHONY : C__DataStructures/fast
 
+binarytree/binarytree.obj: binarytree/binarytree.cpp.obj
+
+.PHONY : binarytree/binarytree.obj
+
+# target to build an object file
+binarytree/binarytree.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__DataStructures.dir\build.make CMakeFiles/C__DataStructures.dir/binarytree/binarytree.cpp.obj
+.PHONY : binarytree/binarytree.cpp.obj
+
+binarytree/binarytree.i: binarytree/binarytree.cpp.i
+
+.PHONY : binarytree/binarytree.i
+
+# target to preprocess a source file
+binarytree/binarytree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__DataStructures.dir\build.make CMakeFiles/C__DataStructures.dir/binarytree/binarytree.cpp.i
+.PHONY : binarytree/binarytree.cpp.i
+
+binarytree/binarytree.s: binarytree/binarytree.cpp.s
+
+.PHONY : binarytree/binarytree.s
+
+# target to generate assembly for a file
+binarytree/binarytree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\C__DataStructures.dir\build.make CMakeFiles/C__DataStructures.dir/binarytree/binarytree.cpp.s
+.PHONY : binarytree/binarytree.cpp.s
+
 linklist/linklist.obj: linklist/linklist.cpp.obj
 
 .PHONY : linklist/linklist.obj
@@ -312,6 +339,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... C__DataStructures
+	@echo ... binarytree/binarytree.obj
+	@echo ... binarytree/binarytree.i
+	@echo ... binarytree/binarytree.s
 	@echo ... linklist/linklist.obj
 	@echo ... linklist/linklist.i
 	@echo ... linklist/linklist.s
