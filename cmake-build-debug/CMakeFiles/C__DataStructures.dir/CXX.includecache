@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-D:/Develop/Clion_Project/C++DataStructures/binarytree/binarytree.cpp
-binarytree.h
-D:/Develop/Clion_Project/C++DataStructures/binarytree/binarytree.h
+D:/Develop/Clion_Project/C++DataStructures/find/binarynode.cpp
+binarynode.h
+D:/Develop/Clion_Project/C++DataStructures/find/binarynode.h
 
-D:/Develop/Clion_Project/C++DataStructures/binarytree/binarytree.h
+D:/Develop/Clion_Project/C++DataStructures/find/binarynode.h
 iostream
 -
 malloc.h

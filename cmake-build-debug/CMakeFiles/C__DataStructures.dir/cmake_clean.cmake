@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/C__DataStructures.dir/binarytree/binarytree.cpp.obj"
+  "CMakeFiles/C__DataStructures.dir/find/binarynode.cpp.obj"
   "CMakeFiles/C__DataStructures.dir/linklist/linklist.cpp.obj"
   "CMakeFiles/C__DataStructures.dir/main.cpp.obj"
   "CMakeFiles/C__DataStructures.dir/queue/myqueue.cpp.obj"

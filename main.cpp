@@ -1,198 +1,200 @@
-//#include <iostream>
-//#include <string>
 //#include <stdio.h>
-//#include <string.h>
-//#include <stdlib.h>
+//#include <malloc.h>
 //
-//#define null 0;
-//#define n 10;
+//#define MaxSize 100
+////定义关键字类型
+//typedef int KeyType;
+//typedef char InfoType;
+////记录类型
+//typedef struct node {
+//    //关键字项
+//    KeyType key;
+//    //其他数据域
+//    InfoType data;
+//    //左右孩子指针
+//    struct node *lchild;
+//    struct node *rchild;
+//} BSTNode;
+////全局变量,用于存放路径
+//int path[MaxSize];
 //
-//using std::cout;
-//using std::cin;
-//using std::endl;
-//using std::string;
-//using namespace std;
+////函数说明
+//void DispBST(BSTNode *b);
 //
-//
-//
-//struct stack {
-//    char *base;
-//    char *top;
-//    int stacksize;
-//};
-//
-//void initstack(struct stack *s) {
-//    s->base = (char *) malloc(20 * sizeof(char));
-//    if (!s->base) exit(0);
-//    s->top = s->base;
-//    s->stacksize = 20;
-//    return;
-//}
-//
-//void push(struct stack *s, char e) {
-//    if (s->top - s->base >= s->stacksize) {
-//        s->base = (char *) realloc(s->base, (s->stacksize + 10) * sizeof(char));
-//        if (!s->base) exit(0);
-//        s->top = s->base + s->stacksize;
-//        s->stacksize += n;
-//    }
-//    *(s->top)++ = e;
-//    return;
-//}
-//
-//char pop(struct stack *s) {
-//    char e;
-//    if (s->top == s->base) return null;
-//    e = *--s->top;
-//    return e;
-//}
-//
-//void clearstack(struct stack *s) {
-//
-//    if (s->top == s->base) return;
-//    s->top = s->base;
-//    return;
-//}
-//
-//int StackEmpty(struct stack *s) {
-//
-//    if (s->top == s->base) return 1;
-//    else return 0;
-//
-//}
-//
-//typedef int elemType;
-//
-///* 以下是关于队列链接存储操作的6种算法  */
-//
-//struct sNode {
-//    elemType data;            /* 值域 */
-//    struct sNode *next;        /* 链接指针 */
-//};
-//
-//struct queueLK {
-//    struct sNode *front;    /* 队首指针 */
-//    struct sNode *rear;        /* 队尾指针 */
-//};
-//
-//
-///* 1.初始化链队 */
-//void initQueue(struct queueLK *hq) {
-//    hq->front = (sNode *) malloc(20 * sizeof(struct sNode));
-//    if (!hq->front) exit(0);
-//    hq->front = hq->rear = NULL;        /* 把队首和队尾指针置空 */
-//    return;
-//}
-//
-//
-///* 2.向链队中插入一个元素x */
-//void enQueue(struct queueLK *hq, elemType x) {
-//    /* 得到一个由newP指针所指向的新结点 */
-//    struct sNode *newP;
-//    newP = (sNode *) malloc(sizeof(struct sNode));
-//    if (newP == NULL) {
-//        printf("内存空间分配失败！ ");
-//        exit(1);
-//    }
-//    /* 把x的值赋给新结点的值域，把新结点的指针域置空 */
-//    newP->data = x;
-//    newP->next = NULL;
-//    /* 若链队为空，则新结点即是队首结点又是队尾结点 */
-//    if (hq->rear == NULL) {
-//        hq->front = hq->rear = newP;
-//    } else {                      /* 若链队非空，则依次修改队尾结点的指针域和队尾指针，使之指向新的队尾结点 */
-//        hq->rear->next = newP;
-//        hq->rear = newP;/* 注意赋值顺序哦 */
-//    }
-//    return;
-//}
-//
-//
-///* 3.从队列中删除一个元素 */
-//int outQueue(struct queueLK *hq) {
-//    struct sNode *p;
-//    int temp;
-//    /* 若链队为空则停止运行 */
-//    if (hq->front == NULL) {
-//        printf("队列为空，无法删除！ ");
-//        exit(1);
-//    }
-//    temp = hq->front->data;        /* 暂存队尾元素以便返回 */
-//    p = hq->front;                /* 暂存队尾指针以便回收队尾结点 */
-//    hq->front = p->next;        /* 使队首指针指向下一个结点 */
-//    /* 若删除后链队为空，则需同时使队尾指针为空 */
-//    if (hq->front == NULL) {
-//        hq->rear = NULL;
-//    }
-//    free(p);        /* 回收原队首结点 */
-//    return temp;    /* 返回被删除的队首元素值 */
-//}
-//
-//
-///* 4.检查链队是否为空，若为空则返回1, 否则返回0 */
-//int emptyQueue(struct queueLK *hq) {
-//    /* 判断队首或队尾任一个指针是否为空即可 */
-//    if (hq->front == NULL) {
+////在以*p为根结点的BST中插入一个关键字为k的结点
+//int InsertBST(BSTNode *&p, KeyType k) {
+//    //原树为空, 新插入的记录为根结点
+//    if (p == nullptr) {
+//        p = (BSTNode *) malloc(sizeof(BSTNode));
+//        p->key = k;
+//        p->lchild = p->rchild = nullptr;
 //        return 1;
-//    } else {
+//    } else if (k == p->key) {
 //        return 0;
+//    } else if (k < p->key) {
+//        //递归调用，插入到*p的左子树中
+//        return InsertBST(p->lchild, k);
+//    } else {
+//        //递归调用，插入到*p的右子树中
+//        return InsertBST(p->rchild, k);
 //    }
 //}
 //
-//
-///************************************************************************/
-//
-//void useStack(struct stack s, char *a) {
-//    cout << "输入一串字符以@结尾" << endl;
-//    cin >> a;
-//    for (int i = 0; i < strlen(a) - 1; i++) {
-//        if (a[i] != '\@') {
-//            push(&s, a[i]);
-//        }
-//    }
+////由数组A中的关键字建立一棵二叉排序树
+//BSTNode *CreatBST(KeyType A[], int n) {
+//    //初始时bt为空树
+//    BSTNode *bt = nullptr;
 //    int i = 0;
-//    while (!StackEmpty(&s)) {
-//        if (pop(&s) != a[i]) {
-//            cout << "不是回文数" << endl;
-//            break;
+//    while (i < n)
+//        //将A[i]插入二叉排序树T中
+//        if (InsertBST(bt, A[i]) == 1) {
+//            printf("    第%d步,插入%d: ", i + 1, A[i]);
+//            DispBST(bt);
+//            printf("\n");
+//            i++;
 //        }
-//        i++;
-//    }
-//    if (StackEmpty(&s)) {
-//        cout << "是回文数" << endl;
+//    //返回建立的二叉排序树的根指针
+//    return bt;
+//}
+//
+////以括号表示法输出二叉排序树bt
+//void DispBST(BSTNode *bt) {
+//    if (bt != nullptr) {
+//        printf("%d", bt->key);
+//        if (bt->lchild != nullptr || bt->rchild != nullptr) {
+//            printf("(");
+//            DispBST(bt->lchild);
+//            if (bt->rchild != nullptr) {
+//                printf(",");
+//            }
+//            DispBST(bt->rchild);
+//            printf(")");
+//        }
 //    }
 //}
 //
-//void useStackAnDQueue(struct queueLK q, struct stack s, char *a) {
-//    cout << "输入一串字符以@结尾" << endl;
-//    cin >> a;
-//    for (int i = 0; i < strlen(a) - 1; i++) {
-//        if (a[i] != '\@') {
-//            push(&s, a[i]);
-//            enQueue(&q, a[i]);
-//        }
-//    }
-//    while (!StackEmpty(&s) && !emptyQueue(&q)) {
-//        if (pop(&s) != outQueue(&q)) {
-//            cout << "不是回文数" << endl;
-//            break;
-//        }
-//    }
-//    if (StackEmpty(&s) && emptyQueue(&q)) {
-//        cout << "是回文数" << endl;
+////以递归方式输出从根结点到查找到的结点的路径
+//int SearchBST(BSTNode *bt, KeyType k) {
+//    printf("%d ", bt->key);
+//    if (k == bt->key) {
+//        return bt->key;
+//    } else if (k < bt->key) {
+//        return SearchBST(bt->lchild, k);
+//    } else if (k > bt->key) {
+//        return SearchBST(bt->rchild, k);
 //    }
 //}
+//
+////当被删*p结点有左右子树时的删除过程
+//void Delete1(BSTNode *p, BSTNode *&r) {
+//    BSTNode *s;
+//    BSTNode *q;
+//    q = p;
+//    s = p->lchild;
+//    while (s->rchild) {
+//        q = s;
+//        s = s->rchild;
+//    }
+//    p->key = s->key;
+//    if (q != p) {
+//        q->rchild = s->lchild;
+//    } else {
+//        q->lchild = s->lchild;
+//    }
+//    delete s;
+//    /*
+//    if (r->rchild != nullptr)
+//        Delete1(p, p->lchild);    //递归找最右下结点
+//    else                        //找到了最右下结点*r
+//    {
+//        p->key = r->key;            //将*r的关键字值赋给*p
+//        q = r;
+//        r = r->lchild;            //将*r的双亲结点的右孩子结点改为*r的左孩子结点
+//        free(q);                //释放原*r的空间
+//    }
+//     */
+//}
+//
+////从二叉排序树中删除*p结点
+//void Delete(BSTNode *&p) {
+//    BSTNode *q;
+//    //*p结点没有右子树的情况
+//    if (p->rchild == nullptr) {
+//        q = p;
+//        p = p->lchild;
+//        free(q);
+//    } else if (p->lchild == nullptr) { //*p结点没有左子树的情况
+//        q = p;
+//        p = p->rchild;
+//        free(q);
+//    } else { //*p结点既有左子树又有右子树的情况
+//        Delete1(p, p->lchild);
+//    }
+//}
+//
+////在bt中删除关键字为k的结点
+//int DeleteBST(BSTNode *&bt, KeyType k) {
+//    //空树删除失败
+//    if (bt == nullptr) {
+//        return 0;
+//    } else {
+//        //小于说明在左边
+//        if (k < bt->key) {
+//            //递归在左子树中删除关键字为k的结点
+//            return DeleteBST(bt->lchild, k);
+//        } else if (k > bt->key) {
+//            //递归在右子树中删除关键字为k的结点
+//            return DeleteBST(bt->rchild, k);
+//        } else { //k=bt->key的情况
+//            //调用Delete(bt)函数删除*bt结点
+//            Delete(bt);
+//            return 1;
+//        }
+//    }
+//}
+//
+////predt为全局变量,保存当前结点中序前趋的值,初值为-∞
+//KeyType predt = -32767;
 //
 //int main() {
-//    struct queueLK q;
-//    struct stack s;
-//    char a[10];
-//    initQueue(&q);
-//    initstack(&s);
+//    BSTNode *bt;
+//    KeyType k = 6;
+//    int a[] = {4, 9, 0, 1, 8, 6, 3, 5, 2, 7}, n = 10;
+//    /*
+//    4
+//   / \
+//  0   9
+//   \ /
+//   1 8
+//   \  /
+//   3 6
+//  /  /\
+//  2  5 7
+//     */
+//    printf(" 创建一棵BST树:");
+//    printf("\n");
+//    bt = CreatBST(a, n);
 //
-//    useStackAnDQueue(q, s, a);
+//    printf("\n\n BST: ");
+//    DispBST(bt);
+//    printf("\n\n");
 //
-//    //利用栈和队列的操作特点写一段代码
+//    printf(" 查找%d关键字: ", k);
+//    SearchBST(bt, k);
 //
-//    //判别读入的一个以’@’为结束符的字符序列是否是“回文”。
+//    printf("\n\n 删除操作:\n");
+//    printf("   原BST: ");
+//    DispBST(bt);
+//    printf("\n");
+//
+//    printf("   删除结点4: ");
+//    DeleteBST(bt, 4);
+//    DispBST(bt);
+//    printf("\n");
+//
+//    printf("   删除结点5: ");
+//    DeleteBST(bt, 5);
+//
+//    DispBST(bt);
+//    printf("\n\n");
 //}

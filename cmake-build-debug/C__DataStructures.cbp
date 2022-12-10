@@ -88,6 +88,12 @@
 		<Unit filename="D:/Develop/Clion_Project/C++DataStructures/binarytree/binarytree.h">
 			<Option target="C__DataStructures"/>
 		</Unit>
+		<Unit filename="D:/Develop/Clion_Project/C++DataStructures/find/binarynode.cpp">
+			<Option target="C__DataStructures"/>
+		</Unit>
+		<Unit filename="D:/Develop/Clion_Project/C++DataStructures/find/binarynode.h">
+			<Option target="C__DataStructures"/>
+		</Unit>
 		<Unit filename="D:/Develop/Clion_Project/C++DataStructures/linklist/linklist.cpp">
 			<Option target="C__DataStructures"/>
 		</Unit>
